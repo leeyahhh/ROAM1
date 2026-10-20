@@ -1,0 +1,37 @@
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#193a3d">
+        <meta name="description" content="Find beautiful destinations, check the weather, save your favourites and plan your travel money with Roam.">
+        <title>Destination details | Roam</title>
+        <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/app.js" defer></script>
+      </head>
+      <body data-page="destination">
+        <a class="skip-link" href="#main">Skip to content</a>
+        <header class="site-header wrap">
+          <a class="brand" href="index.html" aria-label="Roam homepage"><img src="assets/logo.svg" width="39" height="39" alt=""><span>roam<span class="brand-dot">.</span></span></a>
+          <nav aria-label="Main navigation"><a href="index.html">Home</a>
+<a href="explore.html">Explore</a>
+<a href="shortlist.html">My shortlist <span id="saved-count" class="count">0</span></a>
+<a href="travel-money.html">Travel money</a>
+<a href="plan-your-trip.html">Plan your trip</a>
+<a href="about.html">About</a></nav>
+          <a class="header-note" href="explore.html">Go somewhere <span aria-hidden="true">↗</span></a>
+        </header>
+        <main id="main"><section class="page-banner wrap destination-banner" aria-labelledby="destination-title"><p class="eyebrow">YOUR NEXT POSSIBILITY</p><h1 id="destination-title" tabindex="-1">Discover somewhere new.</h1><p id="destination-subtitle">Choose a postcard or search for a city to see more.</p><div class="detail-actions"><a class="button quiet" href="explore.html">← Back to explore</a><button id="save-destination" type="button" class="button primary" disabled>Save place ♡</button></div></section><section class="wrap destination-section"><dl id="destination-facts" class="facts"></dl><div class="weather-heading"><div><p class="eyebrow">PLAN YOUR VISIT</p><h2>A look at the forecast.</h2></div><div class="unit-switch" role="group" aria-label="Temperature unit"><button id="unit-c" type="button" aria-pressed="true">°C</button><button id="unit-f" type="button" aria-pressed="false">°F</button></div></div><div id="weather-panel" class="weather-panel" aria-live="polite">Choose a destination to see the local forecast.</div><p class="data-credit">Weather model data from <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a>. Conditions can vary locally.</p></section><section class="wrap destination-next"><div><p class="eyebrow">KEEP WANDERING</p><h2>There’s always somewhere else.</h2></div><a href="explore.html" class="button primary">Browse destinations ↗</a></section></main>
+        <footer class="site-footer wrap">
+          <div class="footer-top">
+            <a class="brand" href="index.html" aria-label="Roam homepage"><img src="assets/logo.svg" width="34" height="34" alt=""><span>roam<span class="brand-dot">.</span></span></a>
+            <p>A little further from ordinary.</p>
+            <a href="index.html" class="text-link">Back to home ↑</a>
+          </div>
+          <div class="footer-bottom"><span>Designed by Waliat Ibrahim for the curious.</span><p>Weather &amp; geocoding: <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a> · Rates: <a href="https://frankfurter.dev/" target="_blank" rel="noopener noreferrer">Frankfurter</a></p></div>
+        </footer>
+        <div id="toast" class="toast" role="status" aria-live="polite"></div>
+        <noscript><p class="noscript">Enable JavaScript for destination search, live forecasts, favourites and currency conversion.</p></noscript>
+      </body>
+    </html>

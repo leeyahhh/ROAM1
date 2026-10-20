@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#193a3d">
+        <meta name="description" content="Find beautiful destinations, check the weather, save your favourites and plan your travel money with Roam.">
+        <title>Plan your trip | Roam</title>
+        <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/app.js" defer></script>
+      </head>
+      <body data-page="plan-your-trip">
+        <a class="skip-link" href="#main">Skip to content</a>
+        <header class="site-header wrap">
+          <a class="brand" href="index.html" aria-label="Roam homepage"><img src="assets/logo.svg" width="39" height="39" alt=""><span>roam<span class="brand-dot">.</span></span></a>
+          <nav aria-label="Main navigation"><a href="index.html">Home</a>
+<a href="explore.html">Explore</a>
+<a href="shortlist.html">My shortlist <span id="saved-count" class="count">0</span></a>
+<a href="travel-money.html">Travel money</a>
+<a href="plan-your-trip.html" aria-current="page">Plan your trip</a>
+<a href="about.html">About</a></nav>
+          <a class="header-note" href="explore.html">Go somewhere <span aria-hidden="true">↗</span></a>
+        </header>
+         <main>
+    <section class="travel-planner">
+
+      <h1>Plan Your Next Adventure</h1>
+      <p>
+        Your dream getaway starts here!
+        Tell us about your travel preferences
+        and let's make it unforgettable.
+      </p>
+
+      <form id="tripForm">
+        <h2>Personal Details</h2>
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName"
+               name="fullName" required>
+        <label for="email">Email Address</label>
+        <input type="email" id="email"
+               name="email" required>
+        <label for="phone">Phone Number (Optional)</label>
+        <input type="tel" id="phone"
+               name="phone">
+        <h2>Travel Details</h2>
+        <label for="destination">
+          Where would you like to go?
+        </label>
+        <select id="destination"
+                name="destination" required>
+          <option value="">
+            Select a destination
+          </option>
+          <option value="Lisbon">Lisbon</option>
+          <option value="Cape Town">Cape Town</option>
+          <option value="Kyoto">Kyoto</option>
+          <option value="Reykjavik">Reykjavik</option>
+          <option value="Maldives">Maldives</option>
+          <option value="Tokyo">Tokyo</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="departure">
+          Departure Date
+        </label>
+        <input type="date" id="departure"
+               name="departure" required>
+
+        <label for="returnDate">
+          Return Date
+        </label>
+        <input type="date" id="returnDate"
+               name="returnDate" required>
+
+        <label for="travellers">
+          Number of Travellers
+        </label>
+        <input type="number" id="travellers"
+               name="travellers"
+               min="1" max="20" value="1"
+               required>
+
+        <h2>Your Travel Preferences</h2>
+        <fieldset>
+          <legend>What type of holiday do you prefer?</legend>
+          <label>
+            <input type="radio" name="holidayType"
+                   value="Relaxation" required>
+            Relaxation
+          </label>
+
+          <label>
+            <input type="radio" name="holidayType"
+                   value="Adventure">
+            Adventure
+          </label>
+
+          <label>
+            <input type="radio" name="holidayType"
+                   value="Romantic">
+            Romantic Getaway
+          </label>
+
+          <label>
+            <input type="radio" name="holidayType"
+                   value="Cultural">
+            Cultural Experience
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            Which activities interest you?
+          </legend>
+
+          <label>
+            <input type="checkbox" name="activities"
+                   value="Sightseeing">
+            Sightseeing
+          </label>
+
+          <label>
+            <input type="checkbox" name="activities"
+                   value="Shopping">
+            Shopping
+          </label>
+          <label>
+            <input type="checkbox" name="activities"
+                   value="Food Experiences">
+            Food Experiences
+          </label>
+          <label>
+            <input type="checkbox" name="activities"
+                   value="Outdoor Adventures">
+            Outdoor Adventures
+          </label>
+          <label>
+            <input type="checkbox" name="activities"
+                   value="Nightlife">
+            Nightlife
+          </label>
+        </fieldset>
+        <label for="budget">
+          Estimated Travel Budget
+        </label>
+        <input type="range" id="budget"
+               name="budget"
+               min="500" max="5000"
+               step="100" value="1500">
+        <output id="budgetValue" for="budget">
+          £1500
+        </output>
+        <label for="accommodation">
+          Preferred Accommodation
+        </label>
+        <select id="accommodation"
+                name="accommodation">
+          <option value="Hotel">Hotel</option>
+          <option value="Resort">Resort</option>
+          <option value="Apartment">Apartment</option>
+          <option value="Villa">Villa</option>
+          <option value="Hostel">Hostel</option>
+        </select>
+        <h2>Additional Information</h2>
+        <label for="requests">
+          Any special requests?
+        </label>
+        <textarea id="requests" name="requests"
+                  rows="5"
+                  placeholder="Tell us about your ideal trip...">
+        </textarea>
+        <button type="submit">
+          Submit Travel Plan
+        </button>
+        <button type="reset">
+          Clear Form
+        </button>
+      </form>
+      <p id="confirmation" role="status"></p>
+    </section>
+  </main>
+        <footer class="site-footer wrap">
+          <div class="footer-top">
+            <a class="brand" href="index.html" aria-label="Roam homepage"><img src="assets/logo.svg" width="34" height="34" alt=""><span>roam<span class="brand-dot">.</span></span></a>
+            <p>A little further from ordinary.</p>
+            <a href="index.html" class="text-link">Back to home ↑</a>
+          </div>
+          <div class="footer-bottom"><span>Designed by Waliat Ibrahim for the curious.</span><p>Weather &amp; geocoding: <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a> · Rates: <a href="https://frankfurter.dev/" target="_blank" rel="noopener noreferrer">Frankfurter</a></p></div>
+        </footer>
+        <div id="toast" class="toast" role="status" aria-live="polite"></div>
+        <noscript><p class="noscript">Enable JavaScript for destination search, live forecasts, favourites and currency conversion.</p></noscript>
+      </body>
+    </html>
+
+

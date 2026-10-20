@@ -1,0 +1,42 @@
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#193a3d">
+        <meta name="description" content="Find beautiful destinations, check the weather, save your favourites and plan your travel money with Roam.">
+        <title>Explore destinations | Roam</title>
+        <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/app.js" defer></script>
+      </head>
+      <body data-page="explore">
+        <a class="skip-link" href="#main">Skip to content</a>
+        <header class="site-header wrap">
+          <a class="brand" href="index.html" aria-label="Roam homepage"><img src="assets/logo.svg" width="39" height="39" alt=""><span>roam<span class="brand-dot">.</span></span></a>
+          <nav aria-label="Main navigation"><a href="index.html">Home</a>
+<a href="explore.html" aria-current="page">Explore</a>
+<a href="shortlist.html">My shortlist <span id="saved-count" class="count">0</span></a>
+<a href="travel-money.html">Travel money</a>
+<a href="plan-your-trip.html">Plan your trip</a>
+<a href="about.html">About</a></nav>
+          <a class="header-note" href="explore.html">Go somewhere <span aria-hidden="true">↗</span></a>
+        </header>
+        <main id="main"><section class="page-banner wrap" aria-labelledby="explore-title"><p class="eyebrow">A WHOLE WORLD TO WONDER ABOUT</p><h1 id="explore-title">Find your kind<br>of <em>somewhere.</em></h1><p>Start with a city you love, or discover one you haven't thought about yet. The next step is yours.</p></section>
+<section class="wrap search-area" aria-label="Search for destinations"><form id="search-form" class="search-form" role="search"><label for="city-query">Where’s your curiosity taking you?</label><div class="search-field"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="city-query" name="city" type="search" placeholder="Search a city, e.g. Lisbon" required minlength="2" maxlength="100" autocomplete="off" aria-describedby="search-hint search-status"><button class="button primary" type="submit">Find a city ↗</button></div><p id="search-hint" class="field-hint">Try a city name such as Paris, Nairobi or Tokyo. Internet is required for live search.</p></form><p id="search-status" class="status" role="status" aria-live="polite"></p><div id="search-results" class="search-results"></div></section>
+<section class="inspiration wrap" aria-labelledby="inspiration-heading"><div class="section-heading"><div><p class="eyebrow">FOLLOW YOUR CURIOSITY</p><h2 id="inspiration-heading">Somewhere to start.</h2></div><p class="section-intro">Four places. A thousand possibilities.<br>Pick a postcard and take a closer look.</p></div><div class="filters" role="group" aria-label="Filter destination inspiration"><button type="button" data-filter="all" aria-pressed="true">All places</button><button type="button" data-filter="city" aria-pressed="false">City wanderings</button><button type="button" data-filter="coast" aria-pressed="false">By the water</button><button type="button" data-filter="nature" aria-pressed="false">Into the wild</button></div><div class="destination-grid"><article class="destination-card" data-category="city coast"><a class="postcard" href="destination.html?city=lisbon" aria-label="Explore Lisbon, Portugal"><div class="postcard-art"><img src="assets/Lisbon.jpg" width="800" height="500" loading="lazy"><span class="postcard-tag">THE SLOW CITY BREAK</span><span class="card-arrow" aria-hidden="true">↗</span></div><div class="postcard-copy"><span class="country-label">PORTUGAL</span><h3>Lisbon</h3><p>Golden light. Winding streets.</p></div></a></article>
+<article class="destination-card" data-category="city nature"><a class="postcard" href="destination.html?city=kyoto" aria-label="Explore Kyoto, Japan"><div class="postcard-art"><img src="assets/KYOTO.jpg" width="800" height="500" loading="lazy"><span class="postcard-tag">A QUIETER KIND OF MAGIC</span><span class="card-arrow" aria-hidden="true">↗</span></div><div class="postcard-copy"><span class="country-label">JAPAN</span><h3>Kyoto</h3><p>Little lanes. Lasting impressions.</p></div></a></article>
+<article class="destination-card" data-category="coast nature"><a class="postcard" href="destination.html?city=reykjavik" aria-label="Explore Reykjavík, Iceland"><div class="postcard-art"><img src="assets/REYKJAVIK.jpg" width="800" height="500" loading="lazy"><span class="postcard-tag">WILD AT HEART</span><span class="card-arrow" aria-hidden="true">↗</span></div><div class="postcard-copy"><span class="country-label">ICELAND</span><h3>Reykjavík</h3><p>Fresh air. A different perspective.</p></div></a></article>
+<article class="destination-card" data-category="city coast nature"><a class="postcard" href="destination.html?city=cape-town" aria-label="Explore Cape Town, South Africa"><div class="postcard-art"><img src="assets/Capetown.jpg" width="800" height="500" loading="lazy"><span class="postcard-tag">WHERE WORLDS MEET</span><span class="card-arrow" aria-hidden="true">↗</span></div><div class="postcard-copy"><span class="country-label">SOUTH AFRICA</span><h3>Cape Town</h3><p>Mountain mornings. Ocean evenings.</p></div></a></article></div></section></main>
+         <footer class="site-footer wrap">
+          <div class="footer-top">
+            <a class="brand" href="index.html" aria-label="Roam homepage"><img src="assets/logo.svg" width="34" height="34" alt=""><span>roam<span class="brand-dot">.</span></span></a>
+            <p>A little further from ordinary.</p>
+            <a href="index.html" class="text-link">Back to home ↑</a>
+          </div>
+          <div class="footer-bottom"><span>Designed by Waliat Ibrahim for the curious.</span><p>Weather &amp; geocoding: <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a> · Rates: <a href="https://frankfurter.dev/" target="_blank" rel="noopener noreferrer">Frankfurter</a></p></div>
+        </footer>
+        <div id="toast" class="toast" role="status" aria-live="polite"></div>
+        <noscript><p class="noscript">Enable JavaScript for destination search, live forecasts, favourites and currency conversion.</p></noscript>
+      </body>
+    </html>

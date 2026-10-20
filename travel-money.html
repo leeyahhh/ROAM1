@@ -1,0 +1,38 @@
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#193a3d">
+        <meta name="description" content="Find beautiful destinations, check the weather, save your favourites and plan your travel money with Roam.">
+        <title>Travel money | Roam</title>
+        <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/app.js" defer></script>
+      </head>
+      <body data-page="travel-money">
+        <a class="skip-link" href="#main">Skip to content</a>
+        <header class="site-header wrap">
+          <a class="brand" href="index.html" aria-label="Roam homepage"><img src="assets/logo.svg" width="39" height="39" alt=""><span>roam<span class="brand-dot">.</span></span></a>
+          <nav aria-label="Main navigation"><a href="index.html">Home</a>
+<a href="explore.html">Explore</a>
+<a href="shortlist.html">My shortlist <span id="saved-count" class="count">0</span></a>
+<a href="travel-money.html" aria-current="page">Travel money</a>
+<a href="plan-your-trip.html">Plan your trip</a>
+<a href="about.html">About</a></nav>
+          <a class="header-note" href="explore.html">Go somewhere <span aria-hidden="true">↗</span></a>
+        </header>
+        <main id="main"><section class="page-banner wrap" aria-labelledby="money-heading"><p class="eyebrow">A LITTLE PRACTICAL MAGIC</p><h1 id="money-heading">Money for <em>the road.</em></h1><p>A quick estimate of the exchange rate makes travel plans that little bit easier.</p></section>
+<section class="money-section wrap"><div class="money-copy"><p class="eyebrow">YOUR TRAVEL BUDGET</p><h2>New places.<br>Different pocket money.</h2><p>Choose two currencies and see what your amount is worth using the latest available daily reference rate.</p><span class="money-decoration" aria-hidden="true">£ <span>↗</span> €</span></div><div class="converter"><form id="currency-form"><label for="amount">How much are you taking?</label><div class="amount-field"><input id="amount" name="amount" type="number" value="100" min="0.01" max="100000000" step="0.01" required inputmode="decimal"><span>AMOUNT</span></div><div class="currency-selectors"><div><label for="from-currency">From</label><select id="from-currency" name="from"><option value="GBP" selected>GBP — British pound</option><option value="EUR">EUR — Euro</option><option value="USD">USD — US dollar</option><option value="JPY">JPY — Japanese yen</option><option value="AUD">AUD — Australian dollar</option><option value="CAD">CAD — Canadian dollar</option></select></div><button id="swap-currencies" class="swap-button" type="button" aria-label="Swap currencies">⇄</button><div><label for="to-currency">To</label><select id="to-currency" name="to"><option value="GBP">GBP — British pound</option><option value="EUR" selected>EUR — Euro</option><option value="USD">USD — US dollar</option><option value="JPY">JPY — Japanese yen</option><option value="AUD">AUD — Australian dollar</option><option value="CAD">CAD — Canadian dollar</option></select></div></div><button id="convert-button" class="button primary" type="submit">Check exchange rate ↗</button></form><p id="currency-status" class="status" role="status" aria-live="polite"></p><output id="currency-result" for="amount from-currency to-currency" aria-live="polite"></output><p class="converter-note">Daily reference rates from <a href="https://frankfurter.dev/" target="_blank" rel="noopener noreferrer">Frankfurter</a>. Estimates exclude bank fees and may differ from your actual exchange rate.</p></div></section></main>
+        <footer class="site-footer wrap">
+          <div class="footer-top">
+            <a class="brand" href="index.html" aria-label="Roam homepage"><img src="assets/logo.svg" width="34" height="34" alt=""><span>roam<span class="brand-dot">.</span></span></a>
+            <p>A little further from ordinary.</p>
+            <a href="index.html" class="text-link">Back to home ↑</a>
+          </div>
+          <div class="footer-bottom"><span>Designed by Waliat Ibrahim for the curious.</span><p>Weather &amp; geocoding: <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a> · Rates: <a href="https://frankfurter.dev/" target="_blank" rel="noopener noreferrer">Frankfurter</a></p></div>
+        </footer>
+        <div id="toast" class="toast" role="status" aria-live="polite"></div>
+        <noscript><p class="noscript">Enable JavaScript for destination search, live forecasts, favourites and currency conversion.</p></noscript>
+      </body>
+    </html>
